@@ -2,6 +2,10 @@
 @import url('./reset.css');
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,300,500,700');
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   color: #000000;
   background-color: #ffffff;
@@ -38,7 +42,7 @@ strong {
   max-width: 575px;
   margin: 30px auto;
   border-radius: 5px;
-  padding: 55px;
+  padding: 55px 5px;
   box-shadow: 0 0 2px 1px #ccc;
 }
 
@@ -56,10 +60,9 @@ select, input, button {
   width: 100%;
   max-width: 475px;
   padding: 0 15px;
-  box-sizing: border-box;
 }
 
-input {
+select, input {
   border-radius: 5px;
   border: 1px solid #ccc;
 }
@@ -105,4 +108,20 @@ footer {
 .small {
   font-size: 0.5em;
   margin-top: 20px;
+}
+
+@media (max-width: 500px) {
+ body {
+   font-size: 14px;
+ }
+ h1 {
+   font-size: 24px;
+ }
+ select, input, button {
+   font-size: 14px;
+ }
+ .button {
+   width: 100%;
+ }
+
 }
